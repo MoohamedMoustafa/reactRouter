@@ -1,0 +1,38 @@
+.star {
+    width: fit-content !important;
+    margin: auto;
+}
+.starDark {
+    width: fit-content !important;
+    margin: auto;
+}
+
+.star::before,
+.star::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: white;
+    width: 6rem;
+    top: 50%;
+    right: 50px;
+}
+
+.star::before {
+    left: 50px;
+}
+
+.starDark::before,
+.starDark::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: black;
+    width: 6rem;
+    top: 50%;
+    right: 50px;
+}
+
+.starDark::before {
+    left: 50px;
+}

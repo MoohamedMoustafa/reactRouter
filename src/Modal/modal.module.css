@@ -1,0 +1,9 @@
+.modal {
+    background-color: rgba(0, 0, 255, 0.3);
+    position: fixed;
+    inset: 0;
+    z-index: 1500;
+}
+.modalContent {
+    max-width: 500px;
+}
