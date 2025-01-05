@@ -10,21 +10,28 @@ import Home from "./Home/Home";
 import About from "./About/About";
 import Contact from "./Contact/Contact";
 import Portofolio from "./Portofolio/Portofolio";
+import NotFound from "./NotFound/NotFound";
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createBrowserRouter(
+    [
+      {
+        path: "",
+        element: <Layout />,
+        children: [
+          { index: true, element: <Home /> },
+          { path: "about", element: <About /> },
+          { path: "contact", element: <Contact /> },
+          { path: "portofolio", element: <Portofolio /> },
+          { path: "*", element: <NotFound /> },
+        ],
+      },
+    ],
     {
-      path: "",
-      element: <Layout />,
-      children: [
-        { index: true, element: <Home /> },
-        { path: "about", element: <About /> },
-        { path: "contact", element: <Contact /> },
-        { path: "portofolio", element: <Portofolio /> },
-        // {path: "*", element:}
-      ],
-    },
-  ]);
+      basename:
+        process.env.NODE_ENV === "production" ? "/reactRouterProject" : "",
+    }
+  );
 
   return (
     <>
