@@ -22,16 +22,8 @@ export default function Portofolio() {
 
   return (
     <>
-      <div className="bg-white mb-5">
+      <div className="bg-white mb-5 mt-4 ">
         <div className="container min-vh-100">
-          {/* <div className="text-center mb-1">
-            <h2 className="text-uppercase  fw-bold h1 mt-4">about component</h2>
-          </div>
-          <div
-            className={`${style.star} text-center position-relative mb-1 m-auto`}
-          >
-            <i className="fa-solid fa-star "></i>
-          </div> */}
           <Header text='portfolio component' color='text-dark'/>
           <div className="row mt-1 g-5">
             {images.map((image, index) => (

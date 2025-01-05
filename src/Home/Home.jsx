@@ -4,6 +4,7 @@ import avatar from "../assets/avatar.svg";
 import Header from "../Header/Header";
 
 export default function Home() {
+  
   return (
     <>
       <div className={` ${style.homebg}`}>

@@ -5,15 +5,15 @@ export default function Footer() {
   return (
     <>
       <div className={`${style.bg}`}>
-        <div className="container py-5">
+        <div className="container py-4">
           <div className="row text-white text-center py-5">
             <div className="col-md-4 mb-4">
-              <h5 className="h2 mb-2">LOCATION</h5>
+              <h5 className="h2 mb-2 h3">LOCATION</h5>
               <p className="mb-3">2215 John Daniel Drive</p>
               <p>Clark, MO 65243</p>
             </div>
             <div className="col-md-4 mb-5">
-              <h5 className="h2 mb-2">AROUND THE WEB </h5>
+              <h5 className="h3 mb-2">AROUND THE WEB </h5>
               <div
                 className={`${style.iconsContainer} d-flex justify-content-center gap-4`}
               >
@@ -40,7 +40,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="col-md-4">
-            <h5 className="h2 mb-2">ABOUT FREELANCER</h5>
+            <h5 className="h3 mb-2">ABOUT FREELANCER</h5>
             <p className="mb-3">Freelance is a free to use, licensed Bootstrap theme created by Route</p>
             </div>
           </div>

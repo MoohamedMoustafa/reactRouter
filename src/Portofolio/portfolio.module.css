@@ -1,21 +1,3 @@
-.star {
-    width: fit-content !important;
-}
-
-.star::before,
-.star::after {
-    content: '';
-    position: absolute;
-    height: 4px;
-    background-color: black;
-    width: 6rem;
-    top: 50%;
-    right: 50px;
-}
-
-.star::before {
-    left: 50px;
-}
 
 .layer {
     background-color: #1abc9c;

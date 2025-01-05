@@ -2,24 +2,6 @@
     background-color: #1abc9c;
 }
 
-.star {
-    width: fit-content !important;
-}
-
-.star::before,
-.star::after {
-    content: '';
-    position: absolute;
-    height: 4px;
-    background-color: white;
-    width: 6rem;
-    top: 50%;
-    right: 50px;
-}
-
-.star::before {
-    left: 50px;
-}
 
 
 

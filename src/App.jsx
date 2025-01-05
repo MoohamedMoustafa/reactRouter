@@ -1,6 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  useLocation,
+} from "react-router-dom";
 import Layout from "./Layout/Layout";
 import Home from "./Home/Home";
 import About from "./About/About";
@@ -8,8 +12,6 @@ import Contact from "./Contact/Contact";
 import Portofolio from "./Portofolio/Portofolio";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   const router = createBrowserRouter([
     {
       path: "",
